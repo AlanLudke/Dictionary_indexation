@@ -1,0 +1,21 @@
+Objetivo
+
+Este trabalho consiste na construção e utilização de estrutura hierárquica denominada trie (do inglês \char`\"{}retrieval\char`\"{}, sendo também conhecida coo árvore de prefixos ou ainda árvore digital) para a indexação e recuperação eficiente de palavras em grandes arquivos de dicionários (mantidos em memória secundária). A implementação deverá resolver dois problemas (listados a seguir), e os resultados deverão ser formatados em saída padrão de tela de modo que possam ser automaticamente avaliados no V\+PL.
+
+A figura trie exemplifica a organização de um arquivo de dicionário. Cada linha apresenta a definição de uma palavra, sendo composta, no início, pela própria palavra com todos os caracteres em minúsculo (somente entre \textquotesingle{}a\textquotesingle{} (97) e \textquotesingle{}z\textquotesingle{} (122) da tabela A\+S\+C\+II) e envolvida por colchetes, seguida pelo texto de seu significado. Não há símbolos especiais, acentuação, cedilha, etc, no arquivo.
+
+Primeiro problema\+: identificação de prefixos
+
+Construir a trie, em memória principal, a partir das palavras (definidas entre colchetes) de um arquivo de dicionário, conforme o exemplo acima. A partir deste ponto, a aplicação deverá receber uma série de palavras quaisquer (pertencentes ou não ao dicionário) e responder se trata de um prefixo (a mensagem \textquotesingle{}is prefix\textquotesingle{} deve ser produzida) ou não (a mensagem \textquotesingle{}is not prefix\textquotesingle{} deve ser produzida na saída padrão). Sugestão de nó da trie\+:
+
+No\+Trie \{ char letra; //opcional No\+Trie $\ast$filhos\mbox{[}26\mbox{]}; //pode ser uma \textquotesingle{}Linked\+List\textquotesingle{} de ponteiros unsigned long posição; unsigned long comprimento; //se maior que zero, indica último caracter de uma palavra \} Segundo problema\+: indexação de arquivo de dicionário
+
+A contrução da trie deve considerar a localização da palavra no arquivo e o tamanho da linha que a define. Para isto, ao criar o nó correspondente ao último caracter da palavra, deve-\/se atribuir a posição do caracter inicial (incluindo o abre-\/colchetes \textquotesingle{}\mbox{[}\textquotesingle{}), seguida pelo comprimento da linha (não inclui o caracter de mudança de linha) na qual esta palavra foi definida no arquivo de dicionário. Caso a palavra recebida pela aplicação exista no dicionário, estes dois inteiros devem ser produzidos. Importante\+: uma palavra existente no dicionário também pode ser prefixo de outra; neste caso, o caracter final da palavra será encontrado em um nó não-\/folha da trie e também deve-\/se produzir os dois inteiros (posição e comprimento) na saída padrão.
+
+Exemplo\+:
+
+Segue uma entrada possível para a aplicação, exatamente como configurada no V\+PL, contendo o nome do arquivo de dicionário a ser considerado, cuja a trie deve ser construída (no caso para \textquotesingle{}dicionario1.\+dic\textquotesingle{} da figura acima), e uma sequência de palavras, separadas por um espaço em branco e finalizada por \textquotesingle{}0\textquotesingle{} (zero); e a saída que deve ser produzida neste caso.
+
+Entrada\+: dicionario1.\+dic bear bell bid bu bull buy but sell stock stop 0
+
+Saída\+: 0 149 150 122 273 82 is prefix 356 113 470 67 is not prefix 538 97 636 79 716 92 

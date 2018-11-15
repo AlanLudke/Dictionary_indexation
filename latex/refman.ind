@@ -1,0 +1,29 @@
+\begin{theindex}
+
+  \item {insert}
+    \subitem {Trie}, \hyperpage{7}
+
+  \indexspace
+
+  \item {main}
+    \subitem {trie\+\_\+implementation.\+cpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {R\+E\+A\+D\+M\+E.\+md}, \hyperpage{9}
+
+  \indexspace
+
+  \item {search}
+    \subitem {Trie}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Trie}, \hyperpage{7}
+    \subitem {insert}, \hyperpage{7}
+    \subitem {search}, \hyperpage{8}
+    \subitem {Trie}, \hyperpage{7}
+  \item {trie\+\_\+implementation.\+cpp}, \hyperpage{9}
+    \subitem {main}, \hyperpage{9}
+
+\end{theindex}

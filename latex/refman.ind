@@ -5,11 +5,6 @@
 
   \indexspace
 
-  \item {main}
-    \subitem {trie\+\_\+implementation.\+cpp}, \hyperpage{9}
-
-  \indexspace
-
   \item {R\+E\+A\+D\+M\+E.\+md}, \hyperpage{9}
 
   \indexspace
@@ -24,6 +19,5 @@
     \subitem {search}, \hyperpage{8}
     \subitem {Trie}, \hyperpage{7}
   \item {trie\+\_\+implementation.\+cpp}, \hyperpage{9}
-    \subitem {main}, \hyperpage{9}
 
 \end{theindex}

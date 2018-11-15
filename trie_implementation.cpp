@@ -1,3 +1,11 @@
+//! trie_implementation.cpp
+/*!
+* \author Alan Djon Lüdke & Matheus Schaly
+* \since 15/11/2018
+* \version 1.0
+* \copyright 2018
+*/
+
 #include <iostream>
 #include <fstream>
 #include <vector>

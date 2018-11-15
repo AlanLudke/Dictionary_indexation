@@ -23,3 +23,18 @@ A contrução da trie deve considerar a localização da palavra no arquivo e o 
 Exemplo:
 
 Segue uma entrada possível para a aplicação, exatamente como configurada no VPL, contendo o nome do arquivo de dicionário a ser considerado, cuja a trie deve ser construída (no caso para 'dicionario1.dic' da figura acima), e uma sequência de palavras, separadas por um espaço em branco e finalizada por '0' (zero); e a saída que deve ser produzida neste caso.
+
+Entrada:
+dicionario1.dic bear bell bid bu bull buy but sell stock stop 0
+
+Saída:
+0 149
+150 122
+273 82
+is prefix
+356 113
+470 67
+is not prefix
+538 97
+636 79
+716 92
